@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Video() {
+export function Video() {
   return (
     <div className="flex-1">
       Video
     </div>
   )
 }
-
-export default Video

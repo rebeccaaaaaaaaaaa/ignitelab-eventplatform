@@ -1,28 +1,41 @@
 import React from 'react'
-import { CheckCircle } from "phosphor-react"
+import { CheckCircle, Lock } from "phosphor-react"
 
-function Lesson() {
-  return (
-    <a href="">
-      <span className="text-gray-300"> 
-        Domingo • 20 de junho • 19h00 
-      </span>
-      <div className="rounded border border-gray-500 p-4 mt-2">
-        <header className="flex items-center justify-between">
-          <span className="text-sm text-blue-500 font-medium flex items-center gap-2"> 
-            <CheckCircle size={20} />
-            Conteúdo liberado
-          </span>
-          <span className="text-sx rounded px-2 py-[2px] text-white border border-green-300 font-bold"> 
-            Ao vivo
-        </span>
-        </header>
-        <strong className="text-gray-200 mt-5 block">
-          Abertura do evento Ignite labs
-        </strong>
-      </div>
-    </a>
-  )
+interface LessonProps {
+  title: string,
+  slug: string,
+  availableAt: Date,
+  type: 'live' | 'class',
+
 }
 
-export default Lesson
+export function Lesson(props: LessonProps) {
+
+  const isLessonAvailable = false;
+
+  return (
+    <a href="">
+      <span className="text-gray-300">{props.availableAt.toString()}</span>
+      <div className="rounded border border-gray-500 p-4 mt-2">
+        <header className="flex items-center justify-between">
+          {isLessonAvailable ? (
+            <span className="text-sm text-blue-500 font-medium flex items-center gap-2">
+              <CheckCircle size={20} />
+              Conteúdo liberado
+            </span>
+          ) : (
+            <span className="text-sm text-orange-500 font-medium flex items-center gap-2">
+              <Lock size={20} />
+              Em breve
+            </span>
+          )}
+          <span className="text-sx rounded px-2 py-[2px] text-white border border-green-300 font-bold">
+            {props.type === "live" ? "Ao vivo" : "Aula prática"}
+          </span>
+        </header>
+        <strong className="text-gray-200 mt-5 block">{props.title}</strong>
+      </div>
+    </a>
+  );
+}
+
