@@ -45,7 +45,7 @@ Essas aulas terão caracteristicas como, um video para ele pertecente, um profes
     - Adicione dentro do .gitignore o .env.local
 
 - Para rodar o projeto digite
-    - nom run dev
+    - npm run dev
 
 
 # Tecnologias 
