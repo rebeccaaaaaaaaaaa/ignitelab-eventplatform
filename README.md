@@ -5,13 +5,47 @@ Um evento imersivo de 1 semana dando entrada a especialização em Reactjs.
 A premissa do projeto é: Fornecer uma plataforma de eventos, onde é possivel adicionar aulas para os inscritos no evento assistirem.
 Essas aulas terão caracteristicas como, um video para ele pertecente, um professor, descrição e um identificado que aqui chamaos de slug. 
 
+# Projeto (Vercerl Delploy)
+<a href="https://ignitelab-eventplatform-o5fk7lr16-rebeccaaaaaaaaaaa.vercel.app/" target="_blank" alt="live projeto"> Ver o projeto em live</a>
+
 # Preview
 
 <img src="./src/assets/preview-homw.png" alt=""/>
+<img src="./src/assets/preview-event.png" alt=""/>
 
 # Figma do Projeto
 
+<a href="https://www.figma.com/community/file/1120711251998877938" alt=""> Layout do projeto no Figma <a>
+
 # Como executar clonar e executar o projeto
+
+- Para colonar o projeto no terminarl digite
+
+    - git clone https://github.com/rebeccaaaaaaaaaaa/ignitelab-eventplatform.git
+
+- Entre na pasta do projeto e instale as dependencias
+    - cd ignitelab-eventplatform
+    - npm install 
+
+- Pegar as chaves da api e token no GraphCMS
+    - Clonar o projeto pelo GraphCMS - (voce vaiprecisar criar uma conta)<a href="https://app.graphcms.com/clone/6868861bc5024fdca04b1c523b347363?name=ignitelab-rebeccaig"> clique aqui para clonar o projeto <a>
+
+    - Pegar api 
+     - Depois de criar sua conta e clonar o projeto vá para Settings/API Access/Endpoints, o endpoint que voce vai precisar estár em CONTENT API (url finalizada com /master)
+
+     - Toker de autenticação
+        - Para pegar o token de atutenticação, vá para Settings/API Access/Permanent Auth Tokens, se voce clonou meu projeto, provavelmente já está com um criado, porém voce pode apagar e criar um novo.
+
+- Criando e adicionando a api e token em variavéis de ambiente
+    - Ao ter em mãos o endpoint da api e o token de atutenticação, crie na raiz do projeto um arquivo .evn.local com o seguinte conteúdo: 
+        - VITE_API_URL="seu_endpoint_aqui"
+        - VITE_API_ACCESS_TOKEN="seu_token_aqui"
+
+- Adicionar o .env.local no .gitignore
+    - Adicione dentro do .gitignore o .env.local
+
+- Para rodar o projeto digite
+    - nom run dev
 
 
 # Tecnologias 
@@ -51,5 +85,6 @@ Essas aulas terão caracteristicas como, um video para ele pertecente, um profes
 - React Router Dom -  O React Router v6 leva os melhores recursos das versões anteriores - e seu projeto irmão, Reach Router - em nosso menor e mais poderoso pacote até agora. <a href="https://reactrouter.com/" alt="ir para o site oficial"> Saber mais<a>
 
 - TyperScript - O TypeScript adiciona sintaxe adicional ao JavaScript para oferecer suporte a uma integração mais estreita com seu editor . Detecte erros no início do seu editor. <a href="https://www.typescriptlang.org/" alt="ir para o site oficial"> Saber mais<a>
+
 
 
