@@ -5,6 +5,14 @@ Um evento imersivo de 1 semana dando entrada a especialização em Reactjs.
 A premissa do projeto é: Fornecer uma plataforma de eventos, onde é possivel adicionar aulas para os inscritos no evento assistirem.
 Essas aulas terão caracteristicas como, um video para ele pertecente, um professor, descrição e um identificado que aqui chamaos de slug. 
 
+# O que eu aprendi com esse projeto? 
+
+- Toda edição de eventos desse nipe, aprendo muitas coisas novas, dessa vez não foi diferente. 
+Tive meu primeiro contato com o Graphql e seu ecosistema, com isso conseguir aprender como ele funciona usando somente query e mutation, que é algo bem diferente do que estou acostumada utilizadno apis rest.
+Não conhecia também, o conceito de headlessCMS, que aprendi que é um cms que não tem um frontend diretamente conectado a ela, como o wordpress por exemplo. Esse headlesscms que usamos nos permite usar qualquer tecnologia no front pois nos entrega os dados via api, que nesse caso era uma api graphql. Isso eu achei uma mão na roda!
+
+Inclusive, conversando com profissionais mais experientes que eu, recebi um aviso pra quando usar Graphql dar bastante atenção a parte de segurança da api/aplicação.
+
 # Projeto (Vercerl Delploy)
 <a href="https://ignitelab-eventplatform-o5fk7lr16-rebeccaaaaaaaaaaa.vercel.app/" target="_blank" alt="live projeto"> Ver o projeto em live</a>
 
