@@ -1,5 +1,19 @@
 # Plataforma de evento
 
+- O seguinte projeto foi desenvolvido na semana Ignite Lab 2, disponibilizado pela Rocketseat. 
+Um evento imersivo de 1 semana dando entrada a especialização em Reactjs. 
+A premissa do projeto é: Fornecer uma plataforma de eventos, onde é possivel adicionar aulas para os inscritos no evento assistirem.
+Essas aulas terão caracteristicas como, um video para ele pertecente, um professor, descrição e um identificado que aqui chamaos de slug. 
+
+# Preview
+
+<img src="./src/assets/preview-homw.png" alt=""/>
+
+# Figma do Projeto
+
+# Como executar clonar e executar o projeto
+
+
 # Tecnologias 
 
 - Reactjs
@@ -37,3 +51,5 @@
 - React Router Dom -  O React Router v6 leva os melhores recursos das versões anteriores - e seu projeto irmão, Reach Router - em nosso menor e mais poderoso pacote até agora. <a href="https://reactrouter.com/" alt="ir para o site oficial"> Saber mais<a>
 
 - TyperScript - O TypeScript adiciona sintaxe adicional ao JavaScript para oferecer suporte a uma integração mais estreita com seu editor . Detecte erros no início do seu editor. <a href="https://www.typescriptlang.org/" alt="ir para o site oficial"> Saber mais<a>
+
+
